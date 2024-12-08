@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX Manga</title>
+</head>
+<body>
+    <div class="_app">
+        <div class="top">
+            <h1>
+                Thank you for using us!
+            </h1>
+            <img class='logo' src="./img/32x32_logo.png" alt="logo">
+        </div>
+        <div class="bottom">
+            <img src="./img/help.svg" alt="help">
+        </div>
+        <div>
+            <p class="desc">🌵 press [H] for hide/open header-menu</p>
+        </div>
+        <div>
+            <div class="shape_shipper"></div>
+            <div class="shape_shipper"></div>
+            <div class="shape_shipper"></div>
+            <div class="shape_shipper"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style lang="css">
+    @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    body {
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+    ._app {
+        position: relative;
+        padding: 12px;
+        background: none;
+        width: 400px;
+        border: 2px #078835 solid;
+    }
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom img {
+        width: 140px;
+    }
+    h1 {
+        font-family: 'Agbalumo';
+        font-size: 25px;
+        font-weight: normal;
+        color: #0e2c09;
+    }
+    img.logo {
+        margin-left: 10px;
+    }
+    p.desc {
+        color: #4f5250;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .shape_shipper {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+    }
+    .shape_shipper:nth-child(1) {
+        left: 10px;
+        top: 10px;
+        border-left: solid 1px #078835;
+        border-top: solid 1px #078835;
+    }
+    .shape_shipper:nth-child(2) {
+        right: 10px;
+        top: 10px;
+        border-right: solid 1px #078835;
+        border-top: solid 1px #078835;
+    }
+    .shape_shipper:nth-child(3) {
+        left: 10px;
+        bottom: 10px;
+        border-left: solid 1px #078835;
+        border-bottom: solid 1px #078835;
+    }
+    .shape_shipper:nth-child(4) {
+        right: 10px;
+        bottom: 10px;
+        border-right: solid 1px #078835;
+        border-bottom: solid 1px #078835;
+    }
+</style>

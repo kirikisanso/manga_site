@@ -1,0 +1,28 @@
+{
+  "name": "EX manga",
+  "description": "EX for reading manga",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://vk.com/*",
+        "https://teletype.in/*",
+        "https://telegra.ph/*",
+        "https://mangabuff.ru/*"
+      ],
+      "js":[
+        "app.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "./img/16x16_logo.png",
+    "32": "./img/32x32_logo.png",
+    "48": "./img/48x48_logo.png",
+    "128": "./img/128x128_logo.png"
+  },
+  "action": {
+    "default_popup":"popup.html"
+  }
+}
